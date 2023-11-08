@@ -29,6 +29,6 @@ annembed -h
 ### Usage
 Annembed can be run like this (see the example input format): 
 ```
-annembed  --csv ./features.csv embed --scale 0.6
+annembed-new --csv ./c-elegans_qc_final_all.csv embed --scale 0.6 --nbsample 10 --stepg 2.0 --layer 0
 ```
 By default, annembed will use all available computer cores/threads for nearly all steps. Annembed library can be found here: https://crates.io/crates/annembed . Annembed can also be used as a library, as shown in the GSearch program (Ann section) (https://github.com/jean-pierreBoth/gsearch)
