@@ -1,4 +1,4 @@
-# Scripts for reproducing annembed paper
+# Scripts for reproducing [annembed](https://crates.io/crates/annembed) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
 In the scipts folder, you can see the R scripts used to reproduce the main figures in the paper.
@@ -19,7 +19,10 @@ chmod a+x ./annembed
 sudo spctl --master-disable
 ./annembed -h
 
-### or you can have Homebrew installed first then:
+### or if you have conda installed on linux
+conda install -c bioconda annembed
+
+### or you can have Homebrew on MacOS installed first then:
 brew tap jianshu93/annembed
 brew install annembed
 annembed -h
@@ -31,7 +34,10 @@ Annembed can be run like this (see the example input format):
 ```
 annembed --csv ./example/C_elegan_embedded_try.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
 ```
-By default, annembed will use all available computer cores/threads for nearly all steps. Annembed library can be found here: https://crates.io/crates/annembed. Annembed can also be used as a library, as shown in the GSearch program (Ann section) (https://github.com/jean-pierreBoth/gsearch)
+By default, annembed will use all available computer cores/threads for nearly all steps. Annembed library can be found here: https://github.com/jean-pierreBoth/annembed. Annembed can also be used as a library, as shown in the GSearch program (Ann section) (https://github.com/jean-pierreBoth/gsearch)
+
+### Output explanation
+you will find a 2 column output by default, which are the embedded dimensions 1 and 2 respectively. Sample order are preserved and can be combined with sample metadata. Each run can be different because initialization is random and edge sampling is also random. But the visualization results will not be changed.
 
 ## Embedding genome database via GSearch
 ```
