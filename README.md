@@ -29,6 +29,24 @@ annembed -h
 ### Usage
 Annembed can be run like this (see the example input format): 
 ```
-annembed --csv ./c-elegans_qc_final_all.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
+annembed --csv ./example/C_elegan_embedded_try.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
 ```
 By default, annembed will use all available computer cores/threads for nearly all steps. Annembed library can be found here: https://crates.io/crates/annembed. Annembed can also be used as a library, as shown in the GSearch program (Ann section) (https://github.com/jean-pierreBoth/gsearch)
+
+## Embedding genome database via GSearch
+```
+### download pre-built bacterial genome HNSW graph database, check GSearch page ann section on how to do it
+wget http://enve-omics.ce.gatech.edu/data/public_gsearch/GTDBv207_v2023.tar.gz
+tar xzvf ./GTDBv207_v2023.tar.gz
+cd ./GTDB/prot
+tar xzvf k7_s12000_n128_ef1600.prob.tar.gz
+gsearch ann -b ./k7_s12000_n128_ef1600_gsearch --stats --embed
+
+```
+
+The output of this step can be visualized, for example for the GTDB v207 we have the following plot. A new paper for the library and also this subcommand is in preparation.
+
+![Alt!](https://github.com/jean-pierreBoth/gsearch/blob/master/GSearch-annembed-GTDBv207.jpg?raw=true)
+
+### Reference
+Zhao et.al., 2023, Annembed: Graph-based Approximate Nearest Neighbor Embedding Provides Fast and Efficient Dimension Reduction with Applications in Large-scale Biological Data [bioRxiv]()
