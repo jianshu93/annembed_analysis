@@ -32,6 +32,9 @@ annembed -h
 ### Usage
 Annembed can be run like this (see the example input format): 
 ```
+### prepare data
+git clone https://github.com/jianshu93/annembed_analysis
+cd annembed_analysis
 annembed --csv ./example/C_elegan_embedded_try.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
 ```
 By default, annembed will use all available computer cores/threads for nearly all steps. Annembed library can be found here: https://github.com/jean-pierreBoth/annembed. Annembed can also be used as a library, as shown in the Ann section of [GSearch](https://github.com/jean-pierreBoth/gsearch)
