@@ -6,14 +6,14 @@ This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and
 ### Simple case for install
 ```
 ### Linux
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.0/annembed_Linux_x86-64_v0.1.0.tar.gz
-tar -xzvf annembed_Linux_x86-64_v0.1.0.tar.gz
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.1/annembed_Linux_x86-64_v0.1.1.tar.gz
+tar -xzvf annembed_Linux_x86-64_v0.1.1.tar.gz
 chmod a+x ./annembed
 ./annembed -h
 
 ### Macos
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.0/annembed_Darwin_universal_v0.1.0.tar.gz
-tar -xzvf annembed_Darwin_universal_v0.1.0.tar.gz
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.1/annembed_Darwin_universal_v0.1.1.tar.gz
+tar -xzvf annembed_Darwin_universal_v0.1.1.tar.gz
 chmod a+x ./annembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
