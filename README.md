@@ -20,9 +20,12 @@ sudo spctl --master-disable
 ./annembed -h
 
 ### or if you have conda installed on linux (recommended)
+conda create -n annembed_env python=3.8
+conda activate annembed_env
 conda install -c bioconda annembed
 
 ### or you can have Homebrew on MacOS installed first then (recommended):
+brew upgrade
 brew tap jianshu93/annembed
 brew install annembed
 annembed -h
