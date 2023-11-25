@@ -25,7 +25,7 @@ conda activate annembed_env
 conda install -c bioconda annembed
 
 ### or you can have Homebrew on MacOS installed first then (recommended):
-brew upgrade
+brew update
 brew tap jianshu93/annembed
 brew install annembed
 annembed -h
