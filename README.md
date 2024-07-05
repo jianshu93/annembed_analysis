@@ -67,4 +67,4 @@ By default, annembed use [Intel Math Kernel Library](https://www.intel.com/conte
 
 
 ### Reference
-Zhao et.al., 2023, Annembed: Graph-based Approximate Nearest Neighbor Embedding Provides Fast and Efficient Dimension Reduction with Applications in Large-scale Biological Data [bioRxiv]()
+Zhao et.al., 2024,Approximate Nearest Neighbor Graph Provides Fast and Efficient Dimension Reduction with Applications in Large-scale Biological Data [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
