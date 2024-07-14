@@ -13,8 +13,8 @@ chmod a+x ./annembed
 ./annembed -h
 
 ### Macos
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.2/annembed_universal_v0.1.2.tar.gz
-unzip annembed_universal_v0.1.2.zip
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.4/annembed_universal_v0.1.4.tar.gz
+tar -xzvf ./annembed_universal_v0.1.4.tar.gz
 chmod a+x ./annembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
