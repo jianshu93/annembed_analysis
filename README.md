@@ -8,7 +8,7 @@ This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and
 ```
 ### Linux
 wget https://github.com/jianshu93/annembed/releases/download/v0.1.4/annembed_Linux_x86-64_v0.1.4.zip
-unzip annembed_Linux_x86-64_v0.1.2.zip
+unzip annembed_Linux_x86-64_v0.1.4.zip
 chmod a+x ./annembed
 ./annembed -h
 
