@@ -5,6 +5,12 @@
 This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. 
 
 ### Simple case for install
+
+```bash
+conda install -c bioconda -c conda-forge annembed
+```
+
+
 ```
 ### Linux
 wget https://github.com/jianshu93/annembed/releases/download/v0.1.4/annembed_Linux_x86-64_v0.1.4.zip
@@ -19,11 +25,6 @@ chmod a+x ./annembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
 ./annembed -h
-
-### or if you have conda installed on linux (recommended)
-conda create -n annembed_env python=3.8
-conda activate annembed_env
-conda install -c bioconda annembed
 
 ### or you can have Homebrew on MacOS installed first then (recommended):
 brew update
@@ -63,8 +64,8 @@ The output of this step can be visualized, for example for the GTDB v207 we have
 
 
 ### Performance note
-By default, annembed use [Intel Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html) (intel-mkl-static feature) as the BLAS backend to make full use of x86 CPU performance on Linux machines. However, it is possible to use the open source [OpenBLAS](https://www.openblas.net) (openblas-static feature) as the BLAS backend. Our tests showed that OpenBLAS is slightly slower than Intel MKL on x86-64 Linux. On x86-64/Intel MacOS, OpenBLAS/Intel-MKL performance is significantly decreased compared to Linux but still supported (openblas-system/intel-mkl-system feature). We also provide the native BLAS framework support from MacOS called [Accelerate Framework](https://developer.apple.com/documentation/accelerate) (macos-accelerate feature). On aarch64 MacOS (M1, M2, M3 chips), only the OpenBLAS and Accelerate Framework backend is supported (macos-accelerate feature). Again, performance decreased for both compare to Linux. 
+By default, annembed use [Intel Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html) (intel-mkl-static feature) as the BLAS backend to make full use of x86 CPU performance on Linux machines. However, it is possible to use the open source [OpenBLAS](https://www.openblas.net) (openblas-static feature) as the BLAS backend. Our tests showed that OpenBLAS is slightly slower than Intel MKL on x86-64 Linux. On x86-64/Intel MacOS, OpenBLAS/Intel-MKL performance is significantly decreased compared to Linux but still supported (openblas-system/intel-mkl-system feature). We also provide the native BLAS framework support from MacOS called [Accelerate Framework](https://developer.apple.com/documentation/accelerate) (macos-accelerate feature). On aarch64 MacOS (M1, M2, M3 chips), only the OpenBLAS and Accelerate Framework backend is supported (macos-accelerate feature). Again, performance decreased for both compared to Linux. 
 
 
 ### Reference
-Zhao et.al., 2024,Approximate Nearest Neighbor Graph Provides Fast and Efficient Dimension Reduction with Applications in Large-scale Biological Data [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
+Zhao et.al., 2024,Approximate Nearest Neighbor Graph Provides Fast and Efficient Dimension Reduction with Applications for Large-scale Biological Data [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
