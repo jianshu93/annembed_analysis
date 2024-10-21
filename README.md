@@ -13,14 +13,14 @@ conda install -c bioconda -c conda-forge annembed
 
 ```
 ### Linux
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.4/annembed_Linux_x86-64_v0.1.4.zip
-unzip annembed_Linux_x86-64_v0.1.4.zip
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.6/annembed_Linux_x86-64_v0.1.6.zip
+unzip annembed_Linux_x86-64_v0.1.6.zip
 chmod a+x ./annembed
 ./annembed -h
 
 ### Macos
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.4/annembed_universal_v0.1.4.tar.gz
-tar -xzvf ./annembed_universal_v0.1.4.tar.gz
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.6/annembed_universal.tar.gz
+tar -xzvf ./annembed_universal.tar.gz
 chmod a+x ./annembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
