@@ -1,4 +1,4 @@
-![Alt!](https://github.com/jianshu93/annembed_analysis/blob/master/Annembed_logo.jpg?raw=true)
+![](Annembed_logo.jpg)
 # Scripts for reproducing [annembed](https://crates.io/crates/annembed) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
