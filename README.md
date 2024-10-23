@@ -1,4 +1,6 @@
-![](Annembed_logo.jpg)
+<div align="center">
+  ![](Annembed_logo.jpg)
+</div>
 # Scripts for reproducing [annembed](https://crates.io/crates/annembed) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
