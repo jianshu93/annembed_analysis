@@ -54,6 +54,14 @@ you will find a 2 column output embedded.csv by default, which are the embedded 
 
 ## Embedding genome database via [GSearch](https://github.com/jean-pierreBoth/gsearch) (install GSearch first)
 ```
+### Install gsearch (Linux for example, see above for MacOS install)
+
+https://github.com/jean-pierreBoth/gsearch/releases/download/v0.1.4/GSearch_Linux_x86-64_v0.1.3.zip
+unzip GSearch_Linux_x86-64_v0.1.3.zip
+cd GSearch_Linux_x86-64_v0.1.3
+chmod a+x ./gsearch
+./gsearch -h
+
 ### download pre-built bacterial genome HNSW graph database, check GSearch page ann section on how to do it
 wget http://enve-omics.ce.gatech.edu/data/public_gsearch/GTDBv207_v2023.tar.gz
 tar xzvf ./GTDBv207_v2023.tar.gz
