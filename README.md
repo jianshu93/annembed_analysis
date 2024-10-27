@@ -45,7 +45,11 @@ git clone https://github.com/jianshu93/annembed_analysis
 cd annembed_analysis
 
 ### in the example input, column name or header will be skipped (detected automatically), the order of raws in output (most likely your sample) will be the same with that of the input.
-annembed --csv ./example/C_elegan_embedded_try.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
+## v0.2.3 and later
+annembed --csv ./example/c-elegans_qc_final_all_2000.csv --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0 --dim 2 -o fashion_embedded_csv.txt hnsw --dist 'DistL2' --nbconn 48 --ef 400 --knbn 15
+
+## v0.2.2 and before
+annembed --csv ./example/c-elegans_qc_final_all_2000.csv embed --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0
 ```
 By default, annembed will use all available computer cores/threads for nearly all steps except difussion map initialization, which is very fast even for large dataset. Annembed library can be found [here](https://github.com/jean-pierreBoth/annembed) or [here](https://crates.io/crates/annembed). Annembed can also be used as a library, as shown in the Ann section of [GSearch](https://github.com/jean-pierreBoth/gsearch)
 
