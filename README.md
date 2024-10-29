@@ -40,8 +40,33 @@ brew install annembed
 annembed -h
 
 ```
+```bash
+$ annembed -h
+initializing default logger from environment ...
+Non-linear Dimension Reduction/Embedding via Approximate Nearest Neighbor Graph
 
-### Usage
+Usage: annembed [OPTIONS] --csv <csvfile> [COMMAND]
+
+Commands:
+  hnsw  Build HNSW graph
+  help  Print this message or the help of the given subcommand(s)
+
+Options:
+      --csv <csvfile>        expecting a csv file
+  -o, --out <outfile>        expecting output file name
+  -d, --delim <delim>        delimiter can be ' ', ','
+      --batch <batch>        number of batches to run [default: 20]
+      --stepg <grap_step>    gradient step
+      --nbsample <nbsample>  number of edge sampling [default: 10]
+  -l, --layer <hierarchy>    expecting a layer num [default: 0]
+      --scale <scale>        spatial scale factor [default: 1.0]
+  -d, --dim <dimension>      dimension of embedding [default: 2]
+  -q, --quality <quality>    specify sampling fraction, should <= 1.
+  -h, --help                 Print help
+  -V, --version              Print version
+```
+
+### Usage using real-world data
 Annembed can be run like this (see the example input format): 
 ```
 ### prepare data
@@ -89,4 +114,4 @@ By default, annembed use [Intel Math Kernel Library](https://www.intel.com/conte
 
 
 ### Reference
-Zhao et.al., 2024,Approximate Nearest Neighbor Graph Provides Fast and Efficient Dimension Reduction with Applications for Large-scale Biological Data [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
+Jianshu Zhao, Jean Pierre-Both, Konstantinos T Konstantinidis, 2024. Approximate Nearest Neighbor Graph Provides Fast and Efficient Embedding with Applications for Large-scale Biological Data. *bioRxiv* 2024.01.28.577627. [biorxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
