@@ -11,6 +11,10 @@ This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and
 
 ```bash
 conda install -c bioconda -c conda-forge annembed
+
+
+### or if you have an old version miniconda3/bioconda3, use the most version number here: https://bioconda.github.io/recipes/annembed/README.html#package-package%20&#x27;annembed&#x27;
+conda install -c bioconda -c conda-forge annembed=0.1.7
 ```
 
 
