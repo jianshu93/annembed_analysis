@@ -1,3 +1,9 @@
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/annembed/README.html)
+![](https://anaconda.org/bioconda/annembed/badges/license.svg)
+![](https://anaconda.org/bioconda/annembed/badges/version.svg)
+![](https://anaconda.org/bioconda/annembed/badges/latest_release_relative_date.svg)
+![](https://anaconda.org/bioconda/annembed/badges/platforms.svg)
+
 <div align="center">
   <img width="50%" src ="Annembed_logo.jpg">
 </div>
