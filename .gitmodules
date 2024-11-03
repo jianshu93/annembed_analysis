@@ -1,0 +1,3 @@
+[submodule "annembed"]
+	path = annembed
+	url = https://github.com/jianshu93/annembed
