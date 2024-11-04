@@ -8,7 +8,7 @@
   <img width="50%" src ="Annembed_logo.jpg">
 </div>
 
-# Scripts for reproducing [annembed](https://crates.io/crates/annembed) paper
+# Scripts for reproducing [annembed](https://gitlab.com/Jianshu_Zhao/annembed) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
 This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. 
