@@ -26,7 +26,7 @@ conda install -c bioconda -c conda-forge annembed=0.1.7
 
 ```
 ### Linux
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.6/annembed_Linux_x86-64_v0.1.6.zip
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.7/annembed_Linux_x86-64_v0.1.6.zip
 unzip annembed_Linux_x86-64_v0.1.6.zip
 chmod a+x ./annembed
 ./annembed -h
