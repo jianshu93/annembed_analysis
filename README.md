@@ -125,4 +125,4 @@ By default, annembed use [Intel Math Kernel Library](https://www.intel.com/conte
 
 
 ### Reference
-Jianshu Zhao, Jean Pierre-Both, Konstantinos T Konstantinidis, 2024. Approximate Nearest Neighbor Graph Provides Fast and Efficient Embedding with Applications for Large-scale Biological Data. *bioRxiv* 2024.01.28.577627. [biorxiv](https://www.biorxiv.org/content/10.1101/2024.01.28.577627v1)
+Jianshu Zhao, Jean Pierre Both, Konstantinos T Konstantinidis, Approximate nearest neighbor graph provides fast and efficient embedding with applications for large-scale biological data, NAR Genomics and Bioinformatics, Volume 6, Issue 4, December 2024, lqae172, https://doi.org/10.1093/nargab/lqae172
