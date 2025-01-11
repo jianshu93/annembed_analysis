@@ -85,8 +85,14 @@ cd annembed_analysis
 
 ### in the example input, column name or header will be skipped (detected automatically), the order of raws in output (most likely your sample) will be the same with that of the input.
 ## useage (v0.1.6 and later)
-annembed --csv ./example/c-elegans_qc_final_all_2000.csv --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0 --dim 2 -o fashion_embedded_csv.txt hnsw --dist 'DistL2' --nbconn 48 --ef 400 --knbn 15
+annembed --csv ./example/c-elegans_qc_final_all_2000.csv --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0 --dim 2 -o fashion_embedded_csv.txt hnsw --dist 'DistL2' --nbconn 64 --ef 512 --knbn 15
 
+### For high dimension datasets. We can use HubNSW (v0.1.8 or later) to reduce memory and speedup HNSW graph build
+###get mist-fashion data (758 dimensions)
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.8/fashion-mnist_data.csv.gz
+gunzip fashion-mnist_data.csv.gz
+### scale_modify_f is to set number of layers to build, 0.25 is good to allow only 1 layer. 
+annembed --csv ./fashion-mnist_data.csv --scale 0.65 --nbsample 10 --stepg 2.0 --layer 0 --dim 2 -o fashion_embedded.csv hnsw --dist 'DistL2' --nbconn 64 --ef 512 --knbn 15 --scale_modify_f 0.25
 
 
 ## For old version (v0.1.5 and before)
