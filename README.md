@@ -3,6 +3,7 @@
 ![](https://anaconda.org/bioconda/annembed/badges/version.svg)
 ![](https://anaconda.org/bioconda/annembed/badges/latest_release_relative_date.svg)
 ![](https://anaconda.org/bioconda/annembed/badges/platforms.svg)
+[![install with conda](https://anaconda.org/bioconda/annembed/badges/downloads.svg)](https://anaconda.org/bioconda/annembed)
 
 [![Latest Version](https://img.shields.io/crates/v/gsearch?style=for-the-badge&color=mediumpurple&logo=rust)](https://crates.io/crates/annembed)
 [![docs.rs](https://img.shields.io/docsrs/annembed?style=for-the-badge&logo=docs.rs&color=mediumseagreen)](https://docs.rs/annembed/latest/annembed/)
