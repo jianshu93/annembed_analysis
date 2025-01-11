@@ -12,7 +12,7 @@
   <img width="50%" src ="Annembed_logo.jpg">
 </div>
 
-# Scripts for reproducing [annembed](https://gitlab.com/Jianshu_Zhao/annembed) paper
+# Scripts for reproducing [annembed](https://doi.org/10.1093/nargab/lqae172) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
 This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. 
@@ -30,20 +30,20 @@ conda install -c bioconda -c conda-forge annembed=0.1.7
 
 ```
 ### Linux
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.7/annembed_Linux_x86-64_v0.1.6.zip
-unzip annembed_Linux_x86-64_v0.1.6.zip
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.8/annembed_Linux_x86-64_v0.1.8.zip
+unzip annembed_Linux_x86-64_v0.1.8.zip
 chmod a+x ./annembed
 ./annembed -h
 
 ### Macos
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.6/annembed_universal.tar.gz
-tar -xzvf ./annembed_universal.tar.gz
+wget https://github.com/jianshu93/annembed/releases/download/v0.1.8/annembed_Darwin_universal_v0.1.8.tar.gz
+tar -xzvf ./annembed_Darwin_universal_v0.1.8.tar.gz
 chmod a+x ./annembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
 ./annembed -h
 
-### or you can have Homebrew on MacOS installed first then (recommended):
+### or you can have Homebrew on MacOS installed first and then (recommended):
 brew update
 brew tap jianshu93/annembed
 brew install annembed
