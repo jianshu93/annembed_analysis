@@ -9,13 +9,28 @@
 [![docs.rs](https://img.shields.io/docsrs/annembed?style=for-the-badge&logo=docs.rs&color=mediumseagreen)](https://docs.rs/annembed/latest/annembed/)
 
 <div align="center">
-  <img width="50%" src ="Annembed_logo.jpg">
+  <img width="75%" src ="Annembed_logo.jpg">
 </div>
 
 # Scripts for reproducing [annembed](https://doi.org/10.1093/nargab/lqae172) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
 This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. 
+
+If you find annembed useful, please cite the following paper:
+```
+@article{zhao2024approximate,
+  title={Approximate nearest neighbor graph provides fast and efficient embedding with applications for large-scale biological data},
+  author={Zhao, Jianshu and Pierre Both, Jean and Konstantinidis, Konstantinos T},
+  journal={NAR Genomics and Bioinformatics},
+  volume={6},
+  number={4},
+  pages={lqae172},
+  year={2024},
+  publisher={Oxford University Press}
+}
+```
+
 
 ### Simple case for install
 
