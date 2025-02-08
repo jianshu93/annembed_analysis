@@ -67,28 +67,44 @@ annembed -h
 ```
 ```bash
 $ annembed -h
-initializing default logger from environment ...
+ ************** initializing logger *****************
+
 Non-linear Dimension Reduction/Embedding via Approximate Nearest Neighbor Graph
 
-Usage: annembed [OPTIONS] --csv <csvfile> [COMMAND]
+Usage: annembed-new [OPTIONS] --csv <csvfile> [COMMAND]
 
 Commands:
   hnsw  Build HNSW graph
   help  Print this message or the help of the given subcommand(s)
 
 Options:
-      --csv <csvfile>        expecting a csv file
-  -o, --out <outfile>        expecting output file name
-  -d, --delim <delim>        delimiter can be ' ', ','
-      --batch <batch>        number of batches to run [default: 20]
-      --stepg <grap_step>    gradient step
-      --nbsample <nbsample>  number of edge sampling [default: 10]
-  -l, --layer <hierarchy>    expecting a layer num [default: 0]
-      --scale <scale>        spatial scale factor [default: 1.0]
-  -d, --dim <dimension>      dimension of embedding [default: 2]
-  -q, --quality <quality>    specify sampling fraction, should <= 1.
+      --csv <csvfile>        Expecting a csv file
+  -o, --out <outfile>        Output file name
+  -d, --delim <delim>        Delimiter can be ' ', ','
+      --batch <batch>        Number of batches to run [default: 20]
+      --stepg <grap_step>    Number of gradient descent steps
+      --nbsample <nbsample>  Number of edge sampling [default: 10]
+  -l, --layer <hierarchy>    A layer num [default: 0]
+      --scale <scale>        Spatial scale factor [default: 1.0]
+  -d, --dim <dimension>      Dimension of embedding [default: 2]
+  -q, --quality <quality>    Sampling fraction, should <= 1.
   -h, --help                 Print help
-  -V, --version              Print version
+
+$ annembed hnsw -h
+************** initializing logger *****************
+
+Build HNSW graph
+
+Usage: annembed-new --csv <csvfile> hnsw [OPTIONS] --dist <dist> --nbconn <nbconn> --ef <ef> --knbn <knbn>
+
+Options:
+  -d, --dist <dist>                    Distance type is required, must be one of   "DistL1" , "DistL2", "DistCosine" and "DistJeyffreys"  
+      --nbconn <nbconn>                Maximum number of build connections allowed (M in HNSW)
+      --ef <ef>                        Build factor ef_construct in HNSW
+      --scale_modify_f <scale_modify>  Hierarchy scale modification factor in HNSW/HubNSW or FlatNav, must be in [0.2,1] [default: 1.0]
+      --knbn <knbn>                    Number of k-nearest neighbours to be retrieved for embedding
+  -h, --help                           Print help
+
 ```
 
 ### Usage using real-world data
