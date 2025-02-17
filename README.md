@@ -35,7 +35,7 @@ If you find annembed useful, please cite the following paper:
 ### Simple case for install
 
 ```bash
-conda install -c bioconda -c conda-forge annembed
+conda install -c bioconda -c conda-forge annembed=0.1.8
 
 
 ### or if you have an old version miniconda3/bioconda3, use the most version number here: https://bioconda.github.io/recipes/annembed/README.html#package-package%20&#x27;annembed&#x27;
