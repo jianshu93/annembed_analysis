@@ -78,7 +78,7 @@ unzip annembed_Linux_x86-64_v0.2.0.zip
 chmod a+x ./annembed
 ./annembed -h
 ```
-
+## Usage
 ```bash
 $ annembed -h
  ************** initializing logger *****************
