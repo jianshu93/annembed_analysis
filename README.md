@@ -15,7 +15,7 @@
 # Scripts for reproducing [annembed](https://doi.org/10.1093/nargab/lqae172) paper
 ## All scripts are in the scripts folder to directly produce figures in the paper
 ###
-This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. We have a GitLab mirror clone [here](https://gitlab.com/Jianshu_Zhao/annembed) just in case Github service is not freely available in some region. 
+This is a colloboration between [Jianshu Zhao](https://github.com/jianshu93) and [Jean Pierre-Both](https://github.com/jean-pierreBoth) (algorithm part). In the scripts folder, you can see the R scripts used to reproduce the main figures in the paper. We have a GitLab mirror clone [here](https://gitlab.com/Jianshu_Zhao/annembed) and Gitee clone [here](https://gitee.com/jianshuzhao/annembed) (log in first) just in case Github service is not freely available in some region. 
 
 If you find annembed useful, please cite the following paper:
 ```
