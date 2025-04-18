@@ -45,18 +45,22 @@ conda install -c bioconda -c conda-forge annembed=0.2.4
 
 ```
 ### Linux
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.8/annembed_Linux_x86-64_v0.1.8.zip
-unzip annembed_Linux_x86-64_v0.1.8.zip
+wget https://github.com/jianshu93/annembed/releases/download/v0.2.4/annembed_Linux_x86-64_v0.2.4.zip
+unzip annembed_Linux_x86-64_v0.2.4.zip
 chmod a+x ./annembed
+chmod a+x ./dmapembed
 ./annembed -h
-
+./dmapembed -h
 ### Macos
-wget https://github.com/jianshu93/annembed/releases/download/v0.1.8/annembed_Darwin_universal_v0.1.8.tar.gz
-tar -xzvf ./annembed_Darwin_universal_v0.1.8.tar.gz
+wget https://github.com/jianshu93/annembed/releases/download/v0.2.4/annembed_Darwin_universal_v0.2.4.tar.gz
+tar -xzvf ./annembed_Darwin_universal_v0.2.4.tar.gz
+cd annembed
 chmod a+x ./annembed
+chmod a+x ./dmapembed
 ### check install MacOS, you may need to change the system setup to allow external binary to run by type the following first and use your admin password
 sudo spctl --master-disable
 ./annembed -h
+./dmapembed -h
 
 ### or you can have Homebrew on MacOS installed first and then (recommended):
 brew update
@@ -64,19 +68,6 @@ brew tap jianshu93/annembed
 brew install annembed
 annembed -h
 
-```
-
-## Developmental versions
-```bash
-
-## bioconda
-conda install -c bioconda -c conda-forge annembed
-
-## pre-compiled binary
-wget https://github.com/jianshu93/annembed/releases/download/v0.2.1/annembed_Linux_x86-64_v0.2.0.zip
-unzip annembed_Linux_x86-64_v0.2.0.zip
-chmod a+x ./annembed
-./annembed -h
 ```
 ## Usage
 ```bash
