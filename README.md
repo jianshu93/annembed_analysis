@@ -35,11 +35,11 @@ If you find annembed useful, please cite the following paper:
 ### Simple case for stable install
 
 ```bash
-conda install -c bioconda -c conda-forge annembed=0.2.2
+conda install -c bioconda -c conda-forge annembed
 
 
 ### or if you have an old version miniconda3/bioconda3, use the most version number here: https://bioconda.github.io/recipes/annembed/README.html#package-package%20&#x27;annembed&#x27;
-conda install -c bioconda -c conda-forge annembed=0.2.3
+conda install -c bioconda -c conda-forge annembed=0.2.4
 ```
 
 
@@ -83,7 +83,7 @@ chmod a+x ./annembed
 $ annembed -h
  ************** initializing logger *****************
 
-Non-linear Dimension Reduction/Embedding via Approximate Nearest Neighbor Graph
+Non-linear Dimension Reduction/Embedding via Approximate Nearest Neighbor Graph, HNSW Initialization
 
 Usage: annembed-new [OPTIONS] --csv <csvfile> [COMMAND]
 
@@ -119,6 +119,42 @@ Options:
       --knbn <knbn>                    Number of k-nearest neighbours to be retrieved for embedding
   -h, --help                           Print help
 
+
+$ dmapembed -h
+Non-linear Dimension Reduction/Embedding via Approximate Nearest Neighbor Graph, Diffusion Map Initialization
+
+Usage: dmapembed [OPTIONS] --csv <csvfile> [COMMAND]
+
+Commands:
+  hnsw  Build HNSW graph
+  help  Print this message or the help of the given subcommand(s)
+
+Options:
+      --csv <csvfile>      expecting a csv file
+  -o, --out <outfile>      expecting output file name
+  -d, --delim <delim>      delimiter can be ' ', ','
+      --alfa <alfa>        modulate laplacian with drift according to density [default: 1.0]
+      --beta <beta>        value shoud be between -1. and 0. [default: 0.0]
+      --time <time>        diffusion time, usually between 0. ad 5. [default: 5.0]
+  -l, --layer <hierarchy>  expecting a layer num [default: 0]
+  -d, --dim <dimension>    dimension of embedding [default: 2]
+  -h, --help               Print help
+  -V, --version            Print version
+
+
+$ dmapembed hnsw -h
+initializing default logger from environment ...
+Build HNSW graph
+
+Usage: dmapembed --csv <csvfile> hnsw [OPTIONS] --dist <dist> --nbconn <nbconn> --knbn <knbn> --ef <ef>
+
+Options:
+  -d, --dist <dist>                    distance is required   "DistL1" , "DistL2", "DistCosine", "DistJeyffreys"  
+      --nbconn <nbconn>                number of neighbours by layer
+      --scale_modify_f <scale_modify>  Hierarchy scale modification factor in HNSW/HubNSW or FlatNav, must be in [0.2,1] [default: 1.0]
+      --knbn <knbn>                    number of neighbours to use
+      --ef <ef>                        search factor
+  -h, --help                           Print help
 ```
 
 ### Usage using real-world data
