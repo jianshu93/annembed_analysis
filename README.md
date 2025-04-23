@@ -100,7 +100,7 @@ $ annembed hnsw -h
 
 Build HNSW graph
 
-Usage: annembed-new --csv <csvfile> hnsw [OPTIONS] --dist <dist> --nbconn <nbconn> --ef <ef> --knbn <knbn>
+Usage: annembed --csv <csvfile> hnsw [OPTIONS] --dist <dist> --nbconn <nbconn> --ef <ef> --knbn <knbn>
 
 Options:
   -d, --dist <dist>                    Distance type is required, must be one of   "DistL1" , "DistL2", "DistCosine" and "DistJeyffreys"  
